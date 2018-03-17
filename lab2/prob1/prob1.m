@@ -7,3 +7,5 @@ eps(0)
 calc_realmin()
 realmin()
 
+calc_realmax()
+realmax()
