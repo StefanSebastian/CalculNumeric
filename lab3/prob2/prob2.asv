@@ -1,5 +1,0 @@
-points = []
-for n = 10:15
-    h = hilb(n);
-    c = cond(h);
-end
