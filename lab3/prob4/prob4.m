@@ -1,0 +1,1 @@
+conditionarePolinom1(14, 20)
