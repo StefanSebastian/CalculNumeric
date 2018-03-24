@@ -1,8 +1,0 @@
-conditionarePolinom1(14, 20)
-conditionarePolinom2(14, 20)
-
-% https://www.mathworks.com/help/matlab/math/random-numbers-with-specific-mean-and-variance.html
-rng(0,'twister');
-a = 1/10^5;
-b = 0;
-y = a.*randn(5,1) + b;
