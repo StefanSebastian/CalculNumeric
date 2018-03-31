@@ -1,4 +1,4 @@
-function [ x ] = solveJacobi( A, B, err )
+function [ x ] = solveSOR( A, B, err, omega )
 [n, m] = size(A);
 
 D = diag(diag(A));
@@ -22,13 +22,21 @@ for i = 1 : n
 end
 
 % initializare
-M = D;
-N = L + U;
-T = D^(-1) * (L + U);
-C = D^(-1) * B;
+M = (1 / omega) * D - L;
+N = U;
+T = (D + L)^(-1) * U;
+C = (D - L)^(-1) * B;
 
-x
+xv = rand(n, 1);
+xn = T * xv + C;
+errC = norm(xn - xv, inf);
 
+while errC > err
+   xv = xn;
+   xn = T * xv + C;
+   errC = norm(xn - xv, inf);
+end
 
+x = xn;
 end
 
