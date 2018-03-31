@@ -1,0 +1,7 @@
+function [ A, B ] = generareSistemDiagDom( n )
+A = rand(n);
+
+A = A + eye(n) * n;
+B = A * ones(n, 1);
+end
+
