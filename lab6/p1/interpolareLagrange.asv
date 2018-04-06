@@ -1,0 +1,11 @@
+function [ val ] = interpolareLagrange( nodes, nodevals, point )
+% aproximeaza punctul dat prin interpolare Lagrange
+val = 0;
+
+[lin, col] = size(nodes);
+m = col;
+
+
+
+end
+
