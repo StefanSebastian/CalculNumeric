@@ -1,7 +1,7 @@
-nodes = [1, 1.2, 1.4];
+nodes = [1, 1.8, 2.2];
 nodevals = exp(nodes);
 
-t = 1 : 0.01 : 2;
+t = 1 : 0.01 : 3;
 res = interpolareLagrangeMultiplePoints(nodes, nodevals, t);
 
 plot(t, res, 'green');

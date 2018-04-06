@@ -1,0 +1,22 @@
+function [ output_args ] = interpolareLagrangeBaricentrica( nodes, nodevals, x )
+[lin, col] = size(nodes);
+m = col;
+
+w = zeros(1, m); % calculam wj
+for j = 1 : m
+    p = 1;
+    for i = 1 : m
+        if i ~= j
+           p = p * (nodes(1, j) - nodes(1, i));
+        end
+    end
+    w(1, j) = 1 / p;
+end
+
+u = 1; d = 1;
+for j = 1 : m
+    
+end
+
+end
+
