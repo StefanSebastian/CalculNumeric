@@ -1,4 +1,5 @@
 function [ val ] = evalPolFundamental( nodes, k, x )
+% evalueaza valoarea pol fundamental
 [l, m] = size(nodes);
 u = 1; d = 1;
 for j = 1 : m
