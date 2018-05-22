@@ -1,0 +1,9 @@
+function [ res ] = adaptquad( f, a, b, eps )
+m = 5;
+if repetatTrapez(f, a, b, m) - repetatTrapez(f, a, b, 2 * m) < eps
+    
+end
+
+
+end
+
