@@ -1,2 +1,0 @@
-res = apelAdQuad2(@sin, 0, pi, 0.001)
-actual = integ
